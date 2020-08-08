@@ -8,14 +8,14 @@ cd pure
 export parse_branch=$(git rev-parse --abbrev-ref HEAD)
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 --depth=1 -b ndk-r19 gcc && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 --depth=1 -b ndk-r19 gcc32
 git clone --depth=1 --single-branch https://github.com/fabianonline/telegram.sh telegram
-git clone --depth=1 --single-branch https://github.com/andeh24/AnyKernel3 -b sf-notpure
+git clone --depth=1 --single-branch https://github.com/andeh24/AnyKernel3
 mkdir $(pwd)/temp
 export ARCH=arm64
 export TEMP=$(pwd)/temp
 export TELEGRAM_ID=-1001277959729
 export TELEGRAM_TOKEN=1030153459:AAGtCY3MkrHNvYBAaArtjeAHYvzcebcS5iA
 export pack=$(pwd)/AnyKernel3
-export product_name=SFPurecaf
+export product_name=SimplifiedPureCAF
 export device="Redmi Note 5A Lite"
 export CROSS_COMPILE=$(pwd)/gcc/bin/aarch64-linux-android-
 export CROSS_COMPILE_ARM32=$(pwd)/gcc32/bin/arm-linux-androideabi-
