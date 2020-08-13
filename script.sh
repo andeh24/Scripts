@@ -4,7 +4,7 @@
 # Copyright (C) 2019, 2020, Dicky Herlambang (@Nicklas373)
 # Copyright (C) 2020, Muhammad Fadlyas (@fadlyas07)
 git clone https://github.com/andeh24/android_kernel_xiaomi_msm8917 -b gabut-ten gabut --depth=1
-cd pure
+cd gabut
 export parse_branch=$(git rev-parse --abbrev-ref HEAD)
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 --depth=1 -b ndk-r19 gcc && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 --depth=1 -b ndk-r19 gcc32
 git clone --depth=1 --single-branch https://github.com/fabianonline/telegram.sh telegram
