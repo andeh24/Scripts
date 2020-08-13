@@ -3,7 +3,7 @@
 # Copyright (C) 2019, 2020, Raphielscape LLC (@raphielscape)
 # Copyright (C) 2019, 2020, Dicky Herlambang (@Nicklas373)
 # Copyright (C) 2020, Muhammad Fadlyas (@fadlyas07)
-git clone https://github.com/andeh24/android_kernel_xiaomi_msm8917 -b aosp-ten-purecaf pure --depth=1
+git clone https://github.com/andeh24/android_kernel_xiaomi_msm8917 -b gabut-ten gabut --depth=1
 cd pure
 export parse_branch=$(git rev-parse --abbrev-ref HEAD)
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 --depth=1 -b ndk-r19 gcc && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 --depth=1 -b ndk-r19 gcc32
@@ -15,7 +15,7 @@ export TEMP=$(pwd)/temp
 export TELEGRAM_ID=-1001277959729
 export TELEGRAM_TOKEN=1030153459:AAGtCY3MkrHNvYBAaArtjeAHYvzcebcS5iA
 export pack=$(pwd)/AnyKernel3
-export product_name=SimplifiedPureCAF
+export product_name=GabutKernel
 export device="Redmi Note 5A Lite"
 export CROSS_COMPILE=$(pwd)/gcc/bin/aarch64-linux-android-
 export CROSS_COMPILE_ARM32=$(pwd)/gcc32/bin/arm-linux-androideabi-
